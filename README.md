@@ -1,9 +1,9 @@
-# Best Stories API (API_FrontEnd) — README
+# Best Stories API (API_FrontEnd) ï¿½ README
 
 
 ## Projects
-- API_FrontEnd — Minimal RESTful API exposing /best-stories/{n}
-- BestStoriesClient — Console app that queries the API and prints results
+- API_FrontEnd ï¿½ Minimal RESTful API exposing /best-stories/{n}
+- BestStoriesClient ï¿½ Console app that queries the API and prints results
 
 ## Quick start
 
@@ -13,15 +13,15 @@
 
 - To run the API:
   - Navigate to API_FrontEnd folder
-  - Run `dotnet run`
+  - Run `dotnet run --launch-profile https `
 - To run the console client (ensure that API_FrontEnd is running):
   - Navigate to BestStoriesClient folder
   - Run `dotnet run`
 
 ## Endpoints
-- GET / — Redirects to /best-stories/10 by default
-- GET /best-stories — Redirects to /best-stories/10
-- GET /best-stories/{n:int} — Returns top n best stories (n > 0 and <= 500)
+- GET /  Redirects to /best-stories/10 by default
+- GET /best-stories  Redirects to /best-stories/10
+- GET /best-stories/{n:int}  Returns top n best stories (n > 0 and <= 500)
 
 Example:
 curl https://localhost:7298/best-stories/10
